@@ -6,7 +6,7 @@ let currentTimeframe = "weekly" // Default timeframe
 
 async function fetchData() {
     try {
-        let response = await fetch("http://127.0.0.1:5500/time-tracking-dashboard-main/data.json")
+        let response = await fetch("https://github.com/OsatohanmwenT/time-dasboard/blob/main/data.json")
         let data = await response.json()
         renderData(data, currentTimeframe)
     } catch (error) {
